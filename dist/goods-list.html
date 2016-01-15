@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="An Amaze UI template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>宠集-列表页</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+  <link rel="icon" type="image/png" href="i/favicon.png">
+
+  <!-- Add to homescreen -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Fallback to homescreen for Chrome <39 on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="i/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI Sfavicon.pngtarter Kit">
+  <link rel="apple-touch-icon" href="i/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="i/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+  <link rel="stylesheet" href="css/amazeui.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="goods-list">
+<header data-am-widget="header" class="am-header am-header-default search-default am-cf">
+  <a href="#" class="arrow-box am-fl">
+    <span class="arrow-left"></span>
+  </a>
+  <div class="search-box am-fr">
+    <input type="text" class="am-form-field am-radius am-input-sm" placeholder="搜索商品" list="goods-list">
+    <a href="#" class="search-btn">搜索</a>
+    <!-- 去掉am-hide显示下拉列表 -->
+    <div class="search-list am-hide">
+      <ul class="am-list">
+        <li class="item">
+          <i class="icon-time"></i>
+          饼干
+        </li>
+        <li class="item">
+          <i class="icon-time"></i>
+          食品
+        </li>
+      </ul>
+      <div class="bottom am-cf">
+        <a href="#" class="am-fl">清除历史记录</a>
+        <a href="#" class="am-fr">关闭</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main fixed-footer-padding">
+  <article class="goods">
+    <header class="hd">
+      <ul class="am-avg-sm-4">
+        <li class="multi active">
+          <!-- arrow-up 切换如下样式，改变箭头方向 -->
+          <span class="text">综合</span>
+          <i class="arrow-down"></i>
+        </li>
+        <li class="number">销量</li>
+        <li class="price">
+          <span class="text">价格</span>
+          <!-- arrow-up 切换如下样式，改变箭头方向 -->
+          <i class="arrow-down"></i>
+        </li>
+        <li class="filter" data-am-offcanvas="{target: '#filter-side'}"><span class="text">筛选</span><i class="filter-icon"></i></li>
+      </ul>
+    </header>
+    <!-- filter -->
+    <div id="filter-side" class="am-offcanvas filter-side">
+      <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+        <div class="am-offcanvas-content">
+          <header class="header am-cf">
+            <span class="am-fl title">筛选</span>
+            <a href="#" class="am-fr am-btn am-btn-default am-btn-sm am-radius">重置条件</a>
+          </header>
+          <section class="bg bd">
+            <p class="keyword-hd">热门品牌</p>
+            <div class="keyword-bd am-cf" data-am-button>
+              <label for="" class="am-btn am-btn-default am-radius">
+                <input type="checkbox" name="brand" value="神魔">神魔
+              </label>
+              <label for="" class="am-btn am-btn-default am-radius">
+                <input type="checkbox" name="brand" value="食品">食品
+              </label>
+              <label for="" class="am-btn am-btn-default am-radius">
+                <input type="checkbox" name="brand" value="饼干">饼干
+              </label>
+              <label for="" class="am-btn am-btn-default am-radius">
+                <input type="checkbox" name="brand" value="泡菜">泡菜
+              </label>
+              <label for="" class="am-btn am-btn-default am-radius">
+                <input type="checkbox" name="brand" value="其它其它">其它其它
+              </label>
+            </div>
+            <p class="padding"><a href="#" class="am-btn am-btn-primary am-btn-lg am-radius am-btn-block">确认</a></p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="bd">
+      <p class="tip">找到相关产品<span class="am-text-warning">200</span>件</p>
+      <ul class="am-avg-sm-3 list">
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <div class="box">
+            <a href="#">
+              <img src="i/img-300.jpg" alt="" class="img">
+              <p class="am-text-truncate text">进口好吃脆脆的零食猫狗30g通用</p>
+              <p class="am-text-warning price">￥400</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <p class="load">加载更多</p>
+    </div>
+  </article>
+</main>
+<!-- footer -->
+<footer class="footer fixed-footer footer-nav">
+  <ul class="am-avg-sm-4">
+    <li class="item index active">
+      <a href="#" class="am-monospace">
+        <span class="icon"></span>
+        首页
+      </a>
+    </li>
+    <li class="item goods">
+      <a href="#" class="am-monospace">
+        <span class="icon"></span>
+        商品
+      </a>
+    </li>
+    <li class="item cart">
+      <a href="#" class="am-monospace">
+        <span class="icon"></span>
+        <span class="circle"></span>
+        购物车
+      </a>
+    </li>
+    <li class="item my">
+      <a href="#" class="am-monospace">
+        <span class="icon"></span>
+        我的
+      </a>
+    </li>
+  </ul>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+<script src="js/main.js"></script>
+<!-- Built with love using Web Starter Kit -->
+</body>
+</html>
